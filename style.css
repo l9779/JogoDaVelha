@@ -1,0 +1,86 @@
+:root {
+    --bgc-color: #1a3555;
+    --table-color: #157f7f;
+    --hover-color: #7feaea;
+    --block-color: #7fb1ea;
+    --x-color: #4b91e2;
+    --o-color: #4be2e2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bgc-color);
+    background-image: url('./img/ooorganize.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    width: 60vw;
+    padding: 5px;
+    border: solid black 3px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--block-color);
+    margin: 50px auto;
+}
+
+.tabuleiro {
+    margin: auto;
+    background-color: var(--table-color);
+    width: 90vw;
+    height: 90vw;
+    border: solid black 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.casa {
+    width: 30%;
+    height: 30%;
+    border: solid black 3px;
+    border-radius: 10px;
+    background-color: var(--block-color);
+    display: flex;
+}
+
+.casa:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.marca {
+    background: rgb(0, 0, 0);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: 100%;
+    -webkit-mask-size: 100%;
+    margin: auto;
+}
+
+.x {
+    mask-image: url('/img/x.png');
+    -webkit-mask-image: url('/img/x.png');
+    width: 85%;
+    height: 85%;
+}
+
+.o {
+    mask-image: url('/img/o.png');
+    -webkit-mask-image: url('/img/o.png');
+    width: 95%;
+    height: 95%;
+}
