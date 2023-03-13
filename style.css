@@ -5,6 +5,7 @@
     --block-color: #7fb1ea;
     --x-color: #4b91e2;
     --o-color: #4be2e2;
+    --tabuleiro-w: 380px;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
 
 h1 {
     width: 60vw;
+    max-width: var(--tabuleiro-w);
     padding: 5px;
     border: solid black 3px;
     border-radius: 5px;
@@ -36,7 +38,9 @@ h1 {
     margin: auto;
     background-color: var(--table-color);
     width: 90vw;
+    max-width: var(--tabuleiro-w);;
     height: 90vw;
+    max-height: var(--tabuleiro-w);;
     border: solid black 5px;
     border-radius: 10px;
     display: flex;
